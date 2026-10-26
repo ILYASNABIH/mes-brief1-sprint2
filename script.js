@@ -7,7 +7,6 @@ let prochainId = 3;
 
 function afficherproduits () {
   const container = document.querySelector('#liste-produits');
-  container.replaceChildren();
   produits.forEach((produit) => {
   const article = document.createElement('article');
   article.textContent = produit
@@ -15,11 +14,13 @@ function afficherproduits () {
   h2.textContent = produit.nom;
   const p = document.createElement('p');
   p.textContent = `Prix : ${produit.prix}`;
-  }
-)
-  
-}
-produits.afficherproduits(produits)
+  container.appendChild('article')
+  article.appendChild('h2')
+  article.appendChild('p')
+}  
+)};
+
+
 
 
 
