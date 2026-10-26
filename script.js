@@ -15,13 +15,12 @@ function afficherproduits () {
   h2.textContent = produit.nom;
   const p = document.createElement('p');
   p.textContent = `Prix : ${produit.prix}`;
-  } 
+  }
 )
+  
 }
-produits.forEach((produit) => {
-  afficherproduits(produit)
-}
-)
+produits.afficherproduits(produits)
+
 
 
 
